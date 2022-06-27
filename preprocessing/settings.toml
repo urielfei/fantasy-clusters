@@ -1,0 +1,12 @@
+[names]
+features = ['PLAYER_NAME','GP', 'FG_PCT', 'FT_PCT', 'FG3M', 'PTS', 'REB', 'AST', 'STL', 'BLK', 'TOV']
+features_dict = {'PLAYER_NAME' = 'Player', 'GP' = 'GAMES', 'FG_PCT' = 'FG%', 'FT_PCT' = 'FT%','FG3M' = '3PTS', 'PTS' = 'PTS','REB' = 'REB', 'AST' = "AST",'STL' = 'STL', 'BLK' = 'BLK', 'TOV' = 'TOV'}
+
+[params]
+min_games_player_played = 20
+n_players_final_df = 160
+
+[models]
+kmeans_clusters = 5
+pca_n_components = 2
+
