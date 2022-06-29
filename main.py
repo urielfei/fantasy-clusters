@@ -20,8 +20,8 @@ pca_coef = p[0]
 pca_scores = p[1]
 
 biplot(df,pca_coef,pca_scores)
-choose_K_means(df,10)
-choose_K_means_sil(df,10)
-spectral_Kmeans(df,5)
-Kmeans_results(df)
-Kmeans_plot(df,pca_scores,centers,groups)
+#choose_K_means(df,10)
+#choose_K_means_sil(df,10)
+#spectral_Kmeans(df,5)
+#Kmeans_results(df)
+#Kmeans_plot(df,pca_scores,centers,groups)

@@ -6,7 +6,7 @@ from sklearn.cluster import KMeans,SpectralClustering
 from sklearn.metrics import silhouette_score
 from modelling import k_means
 
-def biplot(df, pca_coef, pca_score, show_plot=True):
+def biplot(df, pca_coef, pca_score, show_plot=True, title='default'):
     font_title = {'family': 'serif',
                   'color': 'darkred',
                   'weight': 'normal',
@@ -22,6 +22,7 @@ def biplot(df, pca_coef, pca_score, show_plot=True):
     scale_y = 1.0 / (ys.max() - ys.min())
 
     fig, ax = plt.subplots()
+    plt.tight_layout()
     ax.scatter(xs * scale_x, ys * scale_y, s=8, c='darkblue')
 
 
@@ -56,6 +57,7 @@ def biplot(df, pca_coef, pca_score, show_plot=True):
     ax.grid(True)
     ax.set_xlim([-0.70, 0.65])
     ax.set_ylim([-0.55, 0.58])
+    ax.set_title(title)
     if show_plot:
         plt.show()
 
