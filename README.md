@@ -1,7 +1,7 @@
 
 <h1> Grouping Fantasy NBA Basketball <h1>
 
-<h3> For the final paper see main.ipynb <h3>
+<h3> For the final paper see PCA/KMeans main.ipynb <h3>
 <h3> For Jupyter notebooks see Research <h3>
 
 In this project, PCA and K Means are used to 
